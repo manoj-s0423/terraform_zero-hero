@@ -36,7 +36,7 @@ resource "aws_security_group" "webtraffic" {
 }
 
 resource "aws_instance" "my_instance" {
-    ami           = "ami-0bc7f2dbdcc6b5303"
+    ami           = "ami-0303e2e4a29f041a3"
     instance_type = "t3.micro"
     tags = {
         Name = "Terraform-EC2-MyInstance"
