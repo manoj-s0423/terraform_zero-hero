@@ -9,7 +9,7 @@ resource "aws_instance" "my_instance" {
     tags = {
         Name = "Terraform-EC2-MyInstance"
     }
-    security_groups = [aws_security_group.webtraffic.id]
+    vpc_security_group_ids = [aws_security_group.webtraffic.id]
   
 }
 
